@@ -24,11 +24,14 @@ $this->menu=array(
 	</thead>
  <?php $idgenero=$data['id_genero']; }  ?>
  <table class="table table-striped">
- 
+ 	<thead>
+ <th>           </th>
+ <th>           </th>
  <tr> 	
+ </thead>
  	<td><?php echo $data['titulo']?></td>
  	<td><?php echo $data['noPaginas']?></td>
-	
+	<td><?php echo CHtml::link(CHtml::encode('Opciones'), array('libro/view', 'id'=>$data['id_libro'])); ?></td>
  </tr>
 
 

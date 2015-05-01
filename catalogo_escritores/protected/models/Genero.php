@@ -55,8 +55,8 @@ class Genero extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_genero' => 'Id Genero',
-			'nombreGenero' => 'Nombre Genero',
+			'id_genero' => 'Id Género',
+			'nombreGenero' => 'Nombre del género',
 		);
 	}
 

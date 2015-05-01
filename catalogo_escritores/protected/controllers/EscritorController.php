@@ -157,7 +157,7 @@ public $layout='//layouts/column2';
 	public function actionFiltraLibros($id)
 	{
 		$escritor=$id;
-		$sql = "SELECT l.titulo, l.noPaginas, g.id_genero, g.nombreGenero FROM libro as l, genero as g WHERE l.id_genero=g.id_genero and id_escritor=$escritor ORDER BY id_genero ASC, nombreGenero ASC, titulo ASC";
+		$sql = "SELECT l.id_libro,l.titulo, l.noPaginas, g.id_genero, g.nombreGenero FROM libro as l, genero as g WHERE l.id_genero=g.id_genero and id_escritor=$escritor ORDER BY id_genero ASC, nombreGenero ASC, titulo ASC";
 	    $libros = Yii::app()->db->createCommand($sql)->queryAll($id);
         $this->render('libroEscritor',array('libros'=>$libros,'model'=>$this->loadModel($id)));
 	}

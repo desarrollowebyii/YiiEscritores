@@ -11,7 +11,6 @@ $this->menu=array(
 	array('label'=>'+Registrar escritor', 'url'=>array('create')),
 	array('label'=>'Actualizar escritor', 'url'=>array('update', 'id'=>$model->id_escritor)),
 	array('label'=>'Eliminar escritor', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_escritor),'confirm'=>'¿Está seguro que desea eliminar el registro?')),
-    array('label'=>'Buscar escritor', 'url'=>array('admin')),
 );
 ?>
 

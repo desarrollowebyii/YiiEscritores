@@ -3,7 +3,7 @@
 /* @var $model Genero */
 
 $this->breadcrumbs=array(
-	'Generos'=>array('index'),
+	'Géneros'=>array('index'),
 	'Registrar',
 );
 

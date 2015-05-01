@@ -3,14 +3,13 @@
 /* @var $model Genero */
 
 $this->breadcrumbs=array(
-	'Generos'=>array('index'),
-	'Update',
+	'Géneros'=>array('index'),
+	'Actualizar',
 );
 
 $this->menu=array(
 	array('label'=>'Listar géneros', 'url'=>array('index')),
 	array('label'=>'+Registrar género', 'url'=>array('create')),
-	array('label'=>'Administrar géneros', 'url'=>array('admin')),
 );
 ?>
 

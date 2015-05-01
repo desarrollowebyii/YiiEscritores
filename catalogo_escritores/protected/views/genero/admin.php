@@ -3,7 +3,7 @@
 /* @var $model Genero */
 
 $this->breadcrumbs=array(
-	'Generos'=>array('index'),
+	'Géneros'=>array('index'),
 	'Administrar',
 );
 
@@ -37,6 +37,7 @@ $('.search-form form').submit(function(){
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'genero-grid',
+	'itemsCssClass'=>"table table-striped",
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
